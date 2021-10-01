@@ -1,14 +1,11 @@
 
-# Task: 
-#   1) predict functionality of ESS based on rated power
-#   2) predict rated power of ESS based on functionality
+# Task: predict rated power of ESS based on functionality
 # Sources:
     # kaggle intro to ML course materials
 # Database
     # edited SANDIA Global Enerrgy Storage Database
-# Model:
-#   1) DecisionTreeRegressor
-#   2) RandomForests
+# Model:DecisionTreeRegressor
+
 
 # step 1: Select data for modelling
 import pandas as pd
@@ -61,8 +58,3 @@ from sklearn.metrics import mean_absolute_error as MAE
 mae_error = MAE(val_y, preds)
 
 print(mae_error)
-
-# step 7:
-# step 8:
-# step 9:
-# step 10:
